@@ -45,9 +45,9 @@
 
 ### 👛 Wallet
 
-| Name   | Description | Repo                                                 | Latest Release                                                                            |
-| ------ | ----------- | ---------------------------------------------------- | ----------------------------------------------------------------------------------------- |
-| Wallet | TODO        | [wallet](https://github.com/railgun-reloaded/wallet) | ![Latest Release](https://img.shields.io/github/v/release/railgun-reloaded/wallet?label=) |
+| Name   | Description                                              | Repo                                                 | Latest Release                                                                            |
+| ------ | -------------------------------------------------------- | ---------------------------------------------------- | ----------------------------------------------------------------------------------------- |
+| Wallet | Client-side wallet SDK for managing private transactions | [wallet](https://github.com/railgun-reloaded/wallet) | ![Latest Release](https://img.shields.io/github/v/release/railgun-reloaded/wallet?label=) |
 
 #### Core Dependencies
 
@@ -90,9 +90,9 @@ Wallet
 
 ```
 Prover
-├─ 📁 Base (core)
-├─ 📁 WASM (web)
-└─ 📁 Mobile (mobile)
+├─ 📁 Base
+├─ 📁 WASM
+└─ 📁 Mobile
 ```
 
 </details>
