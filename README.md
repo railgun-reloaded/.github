@@ -2,12 +2,6 @@
 
 [![DEV SUPPORT](https://img.shields.io/badge/DEV_SUPPORT-BE0)](https://discord.gg/railgun)
 
-> At RAILGUN, we're building the future of **private DeFi** — and that future can't exist without the vision and contributions of **our developer community**. 🔒
->
-> **Jump in!** 👉 Check out the options above or dive into one of the core RAILGUN repositories to start making an impact today 🚀
-
----
-
 ### 📝 Docs
 
 | Website                                           | Description                     |
@@ -28,94 +22,51 @@
 
 ### 🗂️ Artifacts
 
-| Name         | Description                                                     | Repo                                                                               | Latest Release                                                                                           |
-| ------------ | --------------------------------------------------------------- | ---------------------------------------------------------------------------------- | -------------------------------------------------------------------------------------------------------- |
-| IPFS Network | Decentralized way to fetch RAILGUN and PPOI artifacts from IPFS | [ipfs-artifact-fetcher](https://github.com/railgun-reloaded/ipfs-artifact-fetcher) | ![Latest Release](https://img.shields.io/github/v/release/railgun-reloaded/ipfs-artifact-fetcher?label=) |
+| Name         | Description                        | Repo                                                                               | Latest Release                                                                                           |
+| ------------ | ---------------------------------- | ---------------------------------------------------------------------------------- | -------------------------------------------------------------------------------------------------------- |
+| IPFS Network | RAILGUN and PPOI artifacts fetcher | [ipfs-artifact-fetcher](https://github.com/railgun-reloaded/ipfs-artifact-fetcher) | ![Latest Release](https://img.shields.io/github/v/release/railgun-reloaded/ipfs-artifact-fetcher?label=) |
 
 ---
 
 ### 🔒 Cryptography
 
-| Name         | Description                                                        | Repo                                                             | Latest Release                                                                                  |
-| ------------ | ------------------------------------------------------------------ | ---------------------------------------------------------------- | ----------------------------------------------------------------------------------------------- |
-| Crypto Lite  | Minimal dependency implementation (eddy, Edwards, Poseidon, bn254) | [crypto-lite](https://github.com/railgun-reloaded/crypto-lite)   | ![Latest Release](https://img.shields.io/github/v/release/railgun-reloaded/crypto-lite?label=)  |
-| Cryptography | Full cryptographic implementation (needs audit)                    | [cryptography](https://github.com/railgun-reloaded/cryptography) | ![Latest Release](https://img.shields.io/github/v/release/railgun-reloaded/cryptography?label=) |
+| Name         | Description                       | Repo                                                             | Latest Release                                                                                  |
+| ------------ | --------------------------------- | ---------------------------------------------------------------- | ----------------------------------------------------------------------------------------------- |
+| Crypto Lite  | Minimal dependency implementation | [crypto-lite](https://github.com/railgun-reloaded/crypto-lite)   | ![Latest Release](https://img.shields.io/github/v/release/railgun-reloaded/crypto-lite?label=)  |
+| Cryptography | Full cryptographic implementation | [cryptography](https://github.com/railgun-reloaded/cryptography) | ![Latest Release](https://img.shields.io/github/v/release/railgun-reloaded/cryptography?label=) |
 
 ---
 
 ### 👛 Wallet
 
-| Name   | Description                                              | Repo                                                 | Latest Release                                                                            |
-| ------ | -------------------------------------------------------- | ---------------------------------------------------- | ----------------------------------------------------------------------------------------- |
-| Wallet | Client-side wallet SDK for managing private transactions | [wallet](https://github.com/railgun-reloaded/wallet) | ![Latest Release](https://img.shields.io/github/v/release/railgun-reloaded/wallet?label=) |
+| Name       | Description                                              | Repo                                                         | Latest Release                                                                                |
+| ---------- | -------------------------------------------------------- | ------------------------------------------------------------ | --------------------------------------------------------------------------------------------- |
+| Wallet SDK | Client-side wallet SDK for managing private transactions | [wallet-skd](https://github.com/railgun-reloaded/wallet-sdk) | ![Latest Release](https://img.shields.io/github/v/release/railgun-reloaded/wallet-sdk?label=) |
 
 #### Core Dependencies
 
-| Name                        | Description                                       | Repo                                                                         | Latest Release                                                                                        |
-| --------------------------- | ------------------------------------------------- | ---------------------------------------------------------------------------- | ----------------------------------------------------------------------------------------------------- |
-| Hierarchical Derivation     | Wallet operations (addresses, HD, key derivation) | [wallet-node](https://github.com/railgun-reloaded/wallet-node)               | ![Latest Release](https://img.shields.io/github/v/release/railgun-reloaded/wallet-node?label=)        |
-| 0zk Addresses               | RAILGUN address encoding and decoding             | [0zk-addresses](https://github.com/railgun-reloaded/0zk-addresses)           | ![Latest Release](https://img.shields.io/github/v/release/railgun-reloaded/0zk-addresses?label=)      |
-| UTXO Manager                | UTXO solver (NEEDS REPO, TO BE WORKED ON)         | TBD                                                                          | N/A                                                                                                   |
-| Merkle Tree Balance Manager | Balance management using Merkle trees             | [merkletree-manager](https://github.com/railgun-reloaded/merkletree-manager) | ![Latest Release](https://img.shields.io/github/v/release/railgun-reloaded/merkletree-manager?label=) |
-
-<details open>
-<summary><strong>📁 Wallet sub-modules</strong></summary>
-
-```
-Wallet
-├─ 📁 Base Wallet
-│   ├─ 📁 Software Wallet
-│   ├─ 📁 Multi-Signature
-│   └─ 📁 Hardware Wallet
-│
-└─ 📁 Balance Scanning
-    ├─ 📁 Note Commitment Indexer
-    ├─ 📁 Nullifier Indexer
-    ├─ 📁 Ciphertext indexer
-    └─ 📁 Fee Calculation
-```
-
-</details>
+| Name                        | Description                                                 | Repo                                                                         | Latest Release                                                                                        |
+| --------------------------- | ----------------------------------------------------------- | ---------------------------------------------------------------------------- | ----------------------------------------------------------------------------------------------------- |
+| Wallet Node                 | HD wallet key derivation and cryptographic primitives       | [wallet-node](https://github.com/railgun-reloaded/wallet-node)               | ![Latest Release](https://img.shields.io/github/v/release/railgun-reloaded/wallet-node?label=)        |
+| 0zk Addresses               | Encoding and decoding for RAILGUN formatted addresses (0zk) | [0zk-addresses](https://github.com/railgun-reloaded/0zk-addresses)           | ![Latest Release](https://img.shields.io/github/v/release/railgun-reloaded/0zk-addresses?label=)      |
+| UTXO Manager                | Transaction composition and UTXO management for RAILGUN     | [utxo-manager](https://github.com/railgun-reloaded/utxo-manager)             | ![Latest Release](https://img.shields.io/github/v/release/railgun-reloaded/utxo-manager?label=)       |
+| Merkle Tree Balance Manager | Merkletree management with nullifier tracking               | [merkletree-manager](https://github.com/railgun-reloaded/merkletree-manager) | ![Latest Release](https://img.shields.io/github/v/release/railgun-reloaded/merkletree-manager?label=) |
 
 ---
 
 ### 🧮 Provers
 
-| Name   | Description         | Repo                                                 | Latest Release                                                                            |
-| ------ | ------------------- | ---------------------------------------------------- | ----------------------------------------------------------------------------------------- |
-| Prover | Base proving system | [prover](https://github.com/railgun-reloaded/prover) | ![Latest Release](https://img.shields.io/github/v/release/railgun-reloaded/prover?label=) |
-
-<details open>
-<summary><strong>📁 Prover sub-modules</strong></summary>
-
-```
-Prover
-├─ 📁 Base
-├─ 📁 WASM
-└─ 📁 Mobile
-```
-
-</details>
+| Name   | Description                                                | Repo                                                 | Latest Release                                                                            |
+| ------ | ---------------------------------------------------------- | ---------------------------------------------------- | ----------------------------------------------------------------------------------------- |
+| Prover | Proof generation and verification for RAILGUN transactions | [prover](https://github.com/railgun-reloaded/prover) | ![Latest Release](https://img.shields.io/github/v/release/railgun-reloaded/prover?label=) |
 
 ---
 
 ### 🌐 Messaging Layer
 
-| Name      | Description                               | Repo                                                    | Latest Release                                                                            |
-| --------- | ----------------------------------------- | ------------------------------------------------------- | ----------------------------------------------------------------------------------------- |
-| messaging | Base messaging system layer based on waku | [messaging](https://github.com/railgun-reloaded/prover) | ![Latest Release](https://img.shields.io/github/v/release/railgun-reloaded/prover?label=) |
-
-<details open>
-<summary><strong>📁 Messaging Layer sub-modules</strong></summary>
-
-```
-Messaging
-├─ 📁 Waku Base
-├─ 📁 Waku Multi-Signature
-└─ 📁 Waku Broadcasters
-```
-
-</details>
+| Name      | Description                    | Repo                                                       | Latest Release                                                                               |
+| --------- | ------------------------------ | ---------------------------------------------------------- | -------------------------------------------------------------------------------------------- |
+| messaging | RAILGUN messaging system layer | [messaging](https://github.com/railgun-reloaded/messaging) | ![Latest Release](https://img.shields.io/github/v/release/railgun-reloaded/messaging?label=) |
 
 ---
 
