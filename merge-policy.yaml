@@ -1,0 +1,8 @@
+version: 1
+
+merge:
+  trigger:
+    labels: ["merge-when-ready"]
+  method: ff-only
+  delete_after_merge: false
+  allow_merge_with_no_checks: true
